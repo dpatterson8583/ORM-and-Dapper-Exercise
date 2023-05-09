@@ -21,17 +21,17 @@ namespace ORM_Dapper
 
             var repo = new DapperDepartmentRepository(conn);
 
-           // Console.WriteLine("Type a new Department Name");
+            Console.WriteLine("Type a new Department Name");
 
-           // var newDepartment = Console.ReadLine();
+            var newDepartment = Console.ReadLine();
 
-           // repo.InsertDepartment(newDepartment);
+            repo.InsertDepartment(newDepartment);
 
             var departments = repo.GetAllDepartments();
 
             foreach (var dept in departments) 
             {
-                Console.WriteLine($"Departments: {dept.Name}");
+                Console.WriteLine($"Departments: {dept.DepartmentID}-{dept.Name}");
             }
 
         }

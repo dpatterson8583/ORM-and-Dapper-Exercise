@@ -44,11 +44,11 @@ namespace ORM_Dapper
                 Console.WriteLine($"Products: {prod.ProductID}-{prod.Name}-{prod.Price}-{prod.CategoryID}");
             }
 
-            repo2.CreateProduct("USBA Adapters", 5.50, 4);
+            repo2.CreateProduct("USBC Adapters", 5.85, 5);
 
             repo2.UpdateProduct(2, "Lenovo You-Go!", 999.00, 1,0,"25");
 
-            repo2.DeleteProduct(2);   //Does not work at this point but is correct on a basic level.
+            repo2.DeleteProduct(4);  
 
             repo2.InsertProduct("USBC Adapters");
            
